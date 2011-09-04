@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
+<codetemplates>
+    <!-- use section -->
+    <codetemplate abbreviation="uas" xml:space="preserve">
+        <code><![CDATA[use JMS\SecurityExtraBundle\Annotation\Secure;
+${cursor}]]></code>
+        <description>Use Secure annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="uar" xml:space="preserve">
+        <code><![CDATA[use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+${cursor}]]></code>
+        <description>Use Route annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="uac" xml:space="preserve">
+        <code><![CDATA[use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
+${cursor}]]></code>
+        <description>Use Cache annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="uat" xml:space="preserve">
+        <code><![CDATA[use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+${cursor}]]></code>
+        <description>Use Template annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="uapc" xml:space="preserve">
+        <code><![CDATA[use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+${cursor}]]></code>
+        <description>Use ParamConverter annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="uao" xml:space="preserve">
+        <code><![CDATA[use Doctrine\ORM\Mapping as ORM;
+${cursor}]]></code>
+        <description>Use ORM annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="uadx" xml:space="preserve">
+        <code><![CDATA[use Gedmo\Mapping\Annotation as Gedmo;
+${cursor}]]></code>
+        <description>Use DoctrineExtensionBundle</description>
+    </codetemplate>
+    <codetemplate abbreviation="ucac" xml:space="preserve">
+        <code><![CDATA[use Doctrine\Common\Collections\ArrayCollection;
+${cursor}]]></code>
+        <description>Use Array Collection</description>
+    </codetemplate>
+    <!-- controller shortcuts -->
+    <codetemplate abbreviation="gem" xml:space="preserve">
+        <code><![CDATA[$this->getDoctrine()->getEntityManager();
+${cursor}]]></code>
+        <description>Get Entity Manager</description>
+    </codetemplate>
+    <codetemplate abbreviation="grq" xml:space="preserve">
+        <code><![CDATA[$this->getRequest();
+${cursor}]]></code>
+        <description>Get Entity Manager</description>
+    </codetemplate>
+</codetemplates>

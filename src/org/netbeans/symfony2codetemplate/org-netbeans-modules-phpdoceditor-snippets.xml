@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
+<codetemplates>
+    <!-- SensioFrameworkBundle -->
+    <codetemplate abbreviation="acr" xml:space="preserve">
+        <code><![CDATA[@Route("${route}", name="${name}")]]></code>
+        <description>Route with name</description>
+    </codetemplate>
+    <codetemplate abbreviation="acmt" xml:space="preserve">
+        <code><![CDATA[@Method({"${POST}"})${cursor}]]></code>
+        <description>Basic secure annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="acpc" xml:space="preserve">
+        <code><![CDATA[@ParamConverter("${param}", class="${class}")]]></code>
+        <description>PramCOnverter with Param and Class</description>
+    </codetemplate>
+    <codetemplate abbreviation="act" xml:space="preserve">
+        <code><![CDATA[@Template()]]></code>
+        <description>Empty template annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="actp" xml:space="preserve">
+        <code><![CDATA[@Template(${name}, vars=${vars})]]></code>
+        <description>Full template</description>
+    </codetemplate>
+    <codetemplate abbreviation="acce" xml:space="preserve">
+        <code><![CDATA[@Cache(expires="${tomorrow}")]]></code>
+        <description>Cache with expire parameter</description>
+    </codetemplate>
+    <codetemplate abbreviation="accs" xml:space="preserve">
+        <code><![CDATA[@Cache(smaxage="${num}")]]></code>
+        <description>Cache with SharedMaxAge</description>
+    </codetemplate>
+    <codetemplate abbreviation="accm" xml:space="preserve">
+        <code><![CDATA[@Cache(maxage="${num}")]]></code>
+        <description>Cache with MaxAge</description>
+    </codetemplate>
+    <!-- JMSSecurityBundle -->
+    <codetemplate abbreviation="acs" xml:space="preserve">
+        <code><![CDATA[@Secure(roles="${roles}")]]></code>
+        <description>Basic secure annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="acsp" xml:space="preserve">
+        <code><![CDATA[@SecureParam(name="${param}", permissions="${premissions}")]]></code>
+        <description>Secure param annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="acsr" xml:space="preserve">
+        <code><![CDATA[@SecureReturn(permissions="${permissions}")]]></code>
+        <description>Secure Return annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="acsra" xml:space="preserve">
+        <code><![CDATA[@RunAs(roles="${role}")]]></code>
+        <description>RunAs annotation</description>
+    </codetemplate>
+    <!-- ORM Entity Annotations -->
+    <!-- Entity -->
+    <codetemplate abbreviation="aee" xml:space="preserve">
+        <code><![CDATA[@ORM\Entity()]]></code>
+        <description>Empty Entity annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="aeer" xml:space="preserve">
+        <code><![CDATA[@ORM\Entity(repositoryClass="${repository}")]]></code>
+        <description>Entity annotation with repository class</description>
+    </codetemplate>
+    <codetemplate abbreviation="aet" xml:space="preserve">
+        <code><![CDATA[@ORM\Table(name="${tablename}")${cursor}]]></code>
+        <description>Table annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="aelc" xml:space="preserve">
+        <code><![CDATA[@ORM\HasLifecycleCallbacks()]]></code>
+        <description>Entity lifecycle callbacks</description>
+    </codetemplate>
+    <!-- Columns -->
+    <codetemplate abbreviation="aeci" xml:space="preserve">
+        <code><![CDATA[@ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")]]></code>
+        <description>Empty Entity annotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="aec" xml:space="preserve">
+        <code><![CDATA[@ORM\Column(type="${type}")${cursor}]]></code>
+        <description>Empty Entity annotation</description>
+    </codetemplate>
+    <!-- Relations -->
+    <codetemplate abbreviation="aoto" xml:space="preserve">
+        <code><![CDATA[@ORM\OneToOne(targetEntity="${entity}")${cursor}]]></code>
+        <description>Relation One to one - unidirectional</description>
+    </codetemplate>
+    <codetemplate abbreviation="aotom" xml:space="preserve">
+        <code><![CDATA[@ORM\OneToOne(targetEntity="${entity}", mappedBy="${var}")${cursor}]]></code>
+        <description>Relation One to one, bidirectional, mapped side</description>
+    </codetemplate>
+    <codetemplate abbreviation="aotoi" xml:space="preserve">
+        <code><![CDATA[@ORM\OneToOne(targetEntity="${entity}", inversedBy="${var}")${cursor}]]></code>
+        <description>Relation One to one, bidirectional inversed side</description>
+    </codetemplate>
+    <codetemplate abbreviation="amto" xml:space="preserve">
+        <code><![CDATA[@ORM\ManyToOne(targetEntity="${entity}")${cursor}]]></code>
+        <description>Relation Many to one - unidirectional</description>
+    </codetemplate>
+    <codetemplate abbreviation="amtoi" xml:space="preserve">
+        <code><![CDATA[@ORM\ManyToOne(targetEntity="${entity}", inversedBy="${var}")${cursor}]]></code>
+        <description>Relation Many to one, bidirectional, inversed side</description>
+    </codetemplate>
+    <codetemplate abbreviation="aotm" xml:space="preserve">
+        <code><![CDATA[@ORM\OneToMany(targetEntity="${entity}", mappedBy="${var}")${cursor}]]></code>
+        <description>Relation One to many, bidirectional, mapped side</description>
+    </codetemplate>
+    <codetemplate abbreviation="amtm" xml:space="preserve">
+        <code><![CDATA[@ORM\ManyToMany(targetEntity="${entity}")${cursor}]]></code>
+        <description>Relation Many to many - unidirectional</description>
+    </codetemplate>
+    <codetemplate abbreviation="amtmm" xml:space="preserve">
+        <code><![CDATA[@ORM\ManyToMany(targetEntity="${entity}", mappedBy="${var}")${cursor}]]></code>
+        <description>Relation Many to many, bidirectional, mapped side</description>
+    </codetemplate>
+    <codetemplate abbreviation="amtmi" xml:space="preserve">
+        <code><![CDATA[@ORM\ManyToMany(targetEntity="${entity}", inversedBy="${var}")${cursor}]]></code>
+        <description>Relation Many to many, bidirectional inversed side</description>
+    </codetemplate>
+    <codetemplate abbreviation="ajc" xml:space="preserve">
+        <code><![CDATA[@ORM\JoinColumn(name="${coumn_name}", referencedColumnName="${ref_column_name}")${cursor}]]></code>
+        <description>JoinColumn annnotation</description>
+    </codetemplate>
+    <codetemplate abbreviation="ajt" xml:space="preserve">
+        <code><![CDATA[@ORM\JoinTable(name="${table_name}",
+     *      joinColumns={@ORM\JoinColumn(name="${join_column_name}", referencedColumnName="${ref_column_name}")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="${ijoin_column_name}", referencedColumnName="${iref_column_name}")}
+     *      )${cursor}]]></code>
+        <description>JoinTable annotation</description>
+    </codetemplate>
+</codetemplates>

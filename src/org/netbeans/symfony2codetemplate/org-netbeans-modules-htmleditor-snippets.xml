@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE codetemplates PUBLIC "-//NetBeans//DTD Editor Code Templates settings 1.0//EN" "http://www.netbeans.org/dtds/EditorCodeTemplates-1_0.dtd">
+<codetemplates>
+    <codetemplate abbreviation="tfor" xml:space="preserve">
+        <code><![CDATA[{% for ${item} in ${Array} %}
+    ${cursor}
+{% endfor %}]]></code>
+        <description>Twig for loop</description>
+    </codetemplate>
+    <codetemplate abbreviation="tec" xml:space="preserve">
+        <code><![CDATA[{{ ${var} }}${cursor}]]></code>
+        <description>Twig for loop</description>
+    </codetemplate>
+</codetemplates>
