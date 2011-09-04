@@ -7,8 +7,34 @@
 {% endfor %}]]></code>
         <description>Twig for loop</description>
     </codetemplate>
+    <codetemplate abbreviation="tfore" xml:space="preserve">
+        <code><![CDATA[{% for ${item} in ${array} %}
+    ${cursor}
+{% else %}
+    
+{% endfor %}]]></code>
+        <description>Twig for loop</description>
+    </codetemplate>
+    <codetemplate abbreviation="tif" xml:space="preserve">
+        <code><![CDATA[{% if ${item} is ${value} %}
+    ${cursor}
+{% endif %}]]></code>
+        <description>Twig if statement</description>
+    </codetemplate>
     <codetemplate abbreviation="tec" xml:space="preserve">
         <code><![CDATA[{{ ${var} }}${cursor}]]></code>
         <description>Twig echo</description>
+    </codetemplate>
+    <codetemplate abbreviation="ter" xml:space="preserve">
+        <code><![CDATA[{{ ${var} | raw }}${cursor}]]></code>
+        <description>Twig raw echo</description>
+    </codetemplate>
+    <codetemplate abbreviation="tdt" xml:space="preserve">
+        <code><![CDATA[{{ ${var} | date("${pattenr}") }}${cursor}]]></code>
+        <description>Twig date echo</description>
+    </codetemplate>
+    <codetemplate abbreviation="tas" xml:space="preserve">
+        <code><![CDATA[{{ asset('${asset}') }}${cursor}]]></code>
+        <description>Asset echo</description>
     </codetemplate>
 </codetemplates>

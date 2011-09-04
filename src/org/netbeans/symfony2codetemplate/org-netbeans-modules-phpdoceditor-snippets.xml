@@ -128,4 +128,120 @@
      *      )${cursor}]]></code>
         <description>JoinTable annotation</description>
     </codetemplate>
+    <!-- Assertions and validations -->
+    <codetemplate abbreviation="aanb" xml:space="preserve">
+        <code><![CDATA[@Assert\NotBlank()${cursor}]]></code>
+        <description>NotBlank Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aab" xml:space="preserve">
+        <code><![CDATA[@Assert\Blank()${cursor}]]></code>
+        <description>Blank Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aann" xml:space="preserve">
+        <code><![CDATA[@Assert\NotNull()${cursor}]]></code>
+        <description>NotNull Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aan" xml:space="preserve">
+        <code><![CDATA[@Assert\Null()${cursor}]]></code>
+        <description>Null Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aatr" xml:space="preserve">
+        <code><![CDATA[@Assert\True()${cursor}]]></code>
+        <description>True Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aafl" xml:space="preserve">
+        <code><![CDATA[@Assert\False()${cursor}]]></code>
+        <description>False Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aatp" xml:space="preserve">
+        <code><![CDATA[@Assert\Type(type="${type}")${cursor}]]></code>
+        <description>Type Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aaem" xml:space="preserve">
+        <code><![CDATA[@Assert\Email(checkMX="${false}")${cursor}]]></code>
+        <description>Email Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aamil" xml:space="preserve">
+        <code><![CDATA[@Assert\MinLength(limit=${limit})${cursor}]]></code>
+        <description>MinLength Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aamxl" xml:space="preserve">
+        <code><![CDATA[@Assert\MaxLength(limit=${limit})${cursor}]]></code>
+        <description>MaxLength Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aau" xml:space="preserve">
+        <code><![CDATA[@Assert\Url()${cursor}]]></code>
+        <description>Url Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aar" xml:space="preserve">
+        <code><![CDATA[@Assert\Regex(pattern="/${pattern}/", match=${true})${cursor}]]></code>
+        <description>Regex Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aaip" xml:space="preserve">
+        <code><![CDATA[@Assert\Ip(version="/${all})${cursor}]]></code>
+        <description>IP Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aami" xml:space="preserve">
+        <code><![CDATA[@Assert\Min(limit=${limit})${cursor}]]></code>
+        <description>Min Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aamx" xml:space="preserve">
+        <code><![CDATA[@Assert\Max(limit=${limit})${cursor}]]></code>
+        <description>Max Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aad" xml:space="preserve">
+        <code><![CDATA[@Assert\Date()${cursor}]]></code>
+        <description>Date Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aadt" xml:space="preserve">
+        <code><![CDATA[@Assert\DateTime()${cursor}]]></code>
+        <description>DateTime Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aat" xml:space="preserve">
+        <code><![CDATA[@Assert\Time()${cursor}]]></code>
+        <description>Time Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aach" xml:space="preserve">
+        <code><![CDATA[@Assert\Choice(choices={${choices}}${, options})${cursor}]]></code>
+        <description>Choice Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aaln" xml:space="preserve">
+        <code><![CDATA[@Assert\Language()${cursor}]]></code>
+        <description>Language Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aalo" xml:space="preserve">
+        <code><![CDATA[@Assert\Locale()${cursor}]]></code>
+        <description>Locale Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aaco" xml:space="preserve">
+        <code><![CDATA[@Assert\Country()${cursor}]]></code>
+        <description>Country Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aaf" xml:space="preserve">
+        <code><![CDATA[@Assert\File(maxSize="${size}")${cursor}]]></code>
+        <description>File Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aafi" xml:space="preserve">
+        <code><![CDATA[@Assert\Image(maxSize="${size}")${cursor}]]></code>
+        <description>Image Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aacl" xml:space="preserve">
+        <code><![CDATA[@Assert\Callback(methods={${methods}})${cursor}]]></code>
+        <description>Callback Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aav" xml:space="preserve">
+        <code><![CDATA[@Assert\Valid()${cursor}]]></code>
+        <description>Valid Assertion</description>
+    </codetemplate>
+    <codetemplate abbreviation="aaa" xml:space="preserve">
+        <code><![CDATA[@Assert\All({
+     *     ${cursor}
+     * })]]></code>
+        <description>All Assertion</description>
+    </codetemplate>
+    <!-- Doctrine Assertions -->
+    <codetemplate abbreviation="aadu" xml:space="preserve">
+        <code><![CDATA[@DoctrineAssert\UniqueEnity(fields={${fields}})${cursor}]]></code>
+        <description>Doctrine UniqueEntity Assertion</description>
+    </codetemplate>
 </codetemplates>

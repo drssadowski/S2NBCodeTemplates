@@ -37,10 +37,25 @@ ${cursor}]]></code>
 ${cursor}]]></code>
         <description>Use DoctrineExtensionBundle</description>
     </codetemplate>
+    <codetemplate abbreviation="uaas" xml:space="preserve">
+        <code><![CDATA[use Symfony\Component\Validator\Constraints as Assert;
+${cursor}]]></code>
+        <description>Use DoctrineExtensionBundle</description>
+    </codetemplate>
+    <codetemplate abbreviation="uadas" xml:space="preserve">
+        <code><![CDATA[use Symfony\Bridge\Doctrine\Validator\Constraints as DoctrineAssert;
+${cursor}]]></code>
+        <description>Use DoctrineExtensionBundle</description>
+    </codetemplate>
     <codetemplate abbreviation="ucac" xml:space="preserve">
         <code><![CDATA[use Doctrine\Common\Collections\ArrayCollection;
 ${cursor}]]></code>
         <description>Use Array Collection</description>
+    </codetemplate>
+    <codetemplate abbreviation="uccr" xml:space="preserve">
+        <code><![CDATA[use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+${cursor}]]></code>
+        <description>Use Controller</description>
     </codetemplate>
     <!-- controller shortcuts -->
     <codetemplate abbreviation="gem" xml:space="preserve">
@@ -52,5 +67,9 @@ ${cursor}]]></code>
         <code><![CDATA[$this->getRequest();
 ${cursor}]]></code>
         <description>Get Entity Manager</description>
+    </codetemplate>
+    <codetemplate abbreviation="rrd" xml:space="preserve">
+        <code><![CDATA[return $this->redirect($this->generateUrl('${path}'${params}));${cursor}]]></code>
+        <description>Return redirection to path</description>
     </codetemplate>
 </codetemplates>
