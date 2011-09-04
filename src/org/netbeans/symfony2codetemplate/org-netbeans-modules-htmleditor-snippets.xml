@@ -9,6 +9,6 @@
     </codetemplate>
     <codetemplate abbreviation="tec" xml:space="preserve">
         <code><![CDATA[{{ ${var} }}${cursor}]]></code>
-        <description>Twig for loop</description>
+        <description>Twig echo</description>
     </codetemplate>
 </codetemplates>
